@@ -1,0 +1,5 @@
+# Write your MySQL query statement below
+select class
+from Courses
+GROUP BY class
+Having COUNT(student) > 5 OR COUNT(student) = 5;
