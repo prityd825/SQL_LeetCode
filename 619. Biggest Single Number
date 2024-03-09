@@ -1,0 +1,11 @@
+# Write your MySQL query statement below
+select max(num) num from (
+    select max(num) num
+    from MyNumbers
+    group by num
+    having count(num) = 1
+) c
+
+# In the provided MySQL query, the alias "c" is used to give a name to the derived table created by the subquery. 
+The subquery itself is enclosed within parentheses and given the alias "c" using the syntax ) c. 
+This is done to make the query more readable and to refer to the result of the subquery in the outer query.
